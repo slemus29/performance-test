@@ -14,7 +14,7 @@ const Card = ({
   >
     <img className="card-img-top" src={image} alt="Card cap" />
     <div className="card-body">
-      <h5 className="card-title">{title}</h5>
+      <h5 className="card-title text-center">{title}</h5>
     </div>
   </div>
 );

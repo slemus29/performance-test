@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Cards from '../components/Cards';
+import Health from '../components/Health';
 
 const Home = () => (
   <>
@@ -9,6 +10,7 @@ const Home = () => (
     <div className="container">
       <Hero />
       <Cards />
+      <Health />
     </div>
   </>
 );
