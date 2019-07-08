@@ -1,4 +1,5 @@
 const express = require('express');
+const compression = require('compression');
 const next = require('next');
 
 const dev = process.env.NODE_ENV !== 'production';
@@ -9,7 +10,7 @@ const PORT = process.env.PORT || 3000;
 app.prepare()
   .then(() => {
     const server = express();
-
+    server.use(compression());
     server.get('*', (req, res) => handle(req, res));
 
     server.listen(PORT, (err) => {
