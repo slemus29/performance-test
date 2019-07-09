@@ -14,7 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-bundle-analyzer": "^0.1.2",
     "@zeit/next-sass": "^1.0.1",
+    "babel-eslint": "^10.0.2",
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "express-useragent": "^1.0.12",
@@ -31,6 +33,7 @@
     "eslint-config-airbnb": "^17.1.1",
     "eslint-plugin-import": "^2.18.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.2"
+    "eslint-plugin-react": "^7.14.2",
+    "webpack-bundle-analyzer": "^3.3.2"
   }
 }

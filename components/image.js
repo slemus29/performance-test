@@ -3,7 +3,7 @@ import LoadingContext from './context';
 
 //[mobile, tablet, desktop]
 
-export const getSize = ({isMobile, isTablet, sizes}) =>  {
+export const getSize = (isMobile, isTablet, sizes) =>  {
     if(isMobile && !isTablet)
         return sizes[0]
     if (isTablet && sizes<1)
@@ -20,7 +20,7 @@ const image = ({
 }) => {
 
     const {isMobile, isTablet} = useContext(LoadingContext);
-    // this.getSize(isMobile, isTablet,size)
+    getSize(isMobile, isTablet ,sizes)
     return(
     <img className={classitem} src={`${imageUrl}?odnWidth=${sizes}`} ></img>
     )
