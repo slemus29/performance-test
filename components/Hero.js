@@ -15,7 +15,7 @@ const Hero = () => (
       <div className="carousel-item">
         {/* <img className="d-block w-100" src="https://i5.walmartimages.com/dfw/4ff9c6c9-f5c9/k2-_181600aa-2d16-48bc-9c9a-47aa76a097de.v1.jpg?odnWidth=1360&odnHeight=410&odnBg=ffffff" alt="Second slide" /> */}
         <Image 
-          imageUrl='https://i5.walmartimages.com/dfw/4ff9c6c9-f5c9/k2-_181600aa-2d16-48bc-9c9a-47aa76a097de.v1.jpg?odnHeight=410&odnBg=ffffff'
+          imageUrl='https://i5.walmartimages.com/dfw/4ff9c6c9-f5c9/k2-_181600aa-2d16-48bc-9c9a-47aa76a097de.v1.jpg'
           sizes={[200]}
           className='d-block w-100'
         />

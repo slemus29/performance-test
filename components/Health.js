@@ -1,7 +1,10 @@
 import React from 'react';
 import HealthCard from './HealthCard';
+import {get} from 'lodash'
 
-const HEALTH_CARDS = [
+const HEALTH_CARDS = {
+  title: 'nuevo titulo',
+  cards:[
   {
     title: 'Nothing to sneeze at',
     subtitle: 'Get relief from seasonal allergies with Zyrtec, Flonase, and more.',
@@ -17,15 +20,21 @@ const HEALTH_CARDS = [
     subtitle: 'Pup culture Adorable gifts & accessories you can create from pics of your pooch.',
     image: '//i5.walmartimages.com/dfw/4ff9c6c9-a42b/k2-_1958a47a-b871-4447-bebc-3401331a12fe.v1.jpg?odnWidth=444&odnHeight=622&odnBg=ffffff',
   },
-];
+]}
 
-const Health = () => (
-  <>
-    <h2 className="text-center">For the dog days of summer</h2>
-    <div className="health-container row">
-      {HEALTH_CARDS.map(HealthCard)}
-    </div>
-  </>
-);
+const Health = () => {
+  const title = get(HEALTH_CARDS, 'title', '');
+  const cards = get(HEALTH_CARDS, 'cards', []);
+
+  return(
+    <>
+      <h2 className="text-center">{title}</h2>
+      <div className="health-container row">
+        {cards.map(HealthCard)}
+      </div>
+    </>
+  );
+
+}
 
 export default Health;
